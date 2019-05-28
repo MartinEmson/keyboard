@@ -7,39 +7,36 @@
 
     <script>
 
+  // Här har vi lite javascript som ändrar bakgrundsfärgen på tangenten man klickar på. Detta görs med keycode.
+
 window.addEventListener("keydown", keyDown);
       function keyDown(key){
 
 document.getElementById(key.keyCode).style.backgroundColor = "red";
 }
 
+// För att hitta rätt element använder jag key.keyCode. Därför namner ger jag alltså id:en för varje tangent till dess specifika keyCode.
+
 window.addEventListener("keyup", keyUp);
       function keyUp(key){
           document.getElementById(key.keyCode).style.backgroundColor = "gray";
 }
 
+// Koden skrivs två gånger. En gång för "onkeydown" och en för "onkeyup". "onkeydown" funktionen ändrar färgen till röd medan "onkeyup" ändrar tillbaka till dess ursprungsfärg.
 
-document.onkeydown = function(keys) {
-      switch (keys.code) {
-        case Backspace:
-                      document.getElementById("backspace").style.backgroundColor = "lightgreen";
-                    break ;
-
-
-
-
-}}
     </script>
 
 
   </head>
   <body>
 
+<!-- Skapar först en div för tangentbord att vara inom, sedan skapar jag rader som tangenterna ligger i.  !-->
+
 
 <div class="all">
-<div id="output">
-
 <div class="row">
+
+<!-- Jag använder mig av 3 olika typer av tangenter då jag ville försöka efterlikna tangentbordet på min egen dator. !-->
 
   <div class="topb" id="27"> Esc </div>
   <div class="topb" id="112"> F1 </div>
@@ -77,6 +74,7 @@ document.onkeydown = function(keys) {
   <div class="backspace" id="8"> ⟵ </div>
 </div>
 
+<!-- Eftersom jag vill få min enter knapp att sitta rätt och se realistisk ut, skapade jag en speciell rad vid namn mid. !-->
 
 <div class="mid">
     <div class="tab" id="9"> ⭾ </div>
@@ -111,8 +109,8 @@ document.onkeydown = function(keys) {
 </div>
 
 <div class="row">
-<div class="ls"> ⇧ </div>
 
+  <div class="ls"> ⇧ </div>
   <div class="sr2" id="60"> < <br> > </div>
   <div class="sr2" id="90"> Z </div>
   <div class="sr2" id="88"> X </div>
@@ -136,6 +134,9 @@ document.onkeydown = function(keys) {
   <div class="sr2" id="18"> Alt Gr </div>
   <div class="sr2" id="17"> Ctrl </div>
 </div>
+
+
+<!-- Här skapar jag pil tangenterna även dom har en egen div och är därför inte inuti en rad. !-->
 
 <div class="pointers">
   <div class="top2" id="33"> Page<br>Up </div>
