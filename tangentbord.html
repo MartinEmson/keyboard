@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="tangentbord.css">
+    <meta charset="utf-8">
+    <title>Tangentbord</title>
+
+    <script>
+
+window.addEventListener("keydown", keyDown);
+      function keyDown(key){
+
+document.getElementById(key.keyCode).style.backgroundColor = "red";
+}
+
+window.addEventListener("keyup", keyUp);
+      function keyUp(key){
+          document.getElementById(key.keyCode).style.backgroundColor = "gray";
+}
+
+
+document.onkeydown = function(keys) {
+      switch (keys.code) {
+        case Backspace:
+                      document.getElementById("backspace").style.backgroundColor = "lightgreen";
+                    break ;
+
+
+
+
+}}
+    </script>
+
+
+  </head>
+  <body>
+
+
+<div class="all">
+<div id="output">
+
+<div class="row">
+
+  <div class="topb" id="27"> Esc </div>
+  <div class="topb" id="112"> F1 </div>
+  <div class="topb" id="113"> F2 </div>
+  <div class="topb" id="114"> F3 </div>
+  <div class="topb" id="115"> F4 </div>
+  <div class="topb" id="116"> F5 </div>
+  <div class="topb" id="117"> F6 </div>
+  <div class="topb" id="118"> F7 </div>
+  <div class="topb" id="119"> F8 </div>
+  <div class="topb" id="120"> F9 </div>
+  <div class="topb" id="121"> F10 </div>
+  <div class="topb" id="122"> F11 </div>
+  <div class="topb" id="123"> F12 </div>
+  <div class="topb" id="44"><center> PrtScr </center></div>
+  <div class="topb" id="45"><center> Insert </center></div>
+  <div class="topb" id="46"><center> Delete </center></div>
+</div>
+
+<div class="row">
+
+  <div class="§" id="220"> ½ <br> § </div>
+  <div class="sr" id="49"> ! <br> 1 </div>
+  <div class="sr" id="50"> " <br> 2 </div>
+  <div class="sr" id="51"> # <br> 3 </div>
+  <div class="sr" id="52"> ¤ <br> 4 </div>
+  <div class="sr" id="53"> % <br> 5 </div>
+  <div class="sr" id="54"> & <br> 6 </div>
+  <div class="sr" id="55"> / <br> 7 </div>
+  <div class="sr" id="56"> ( <br> 8 </div>
+  <div class="sr" id="57"> ) <br> 9 </div>
+  <div class="sr" id="48"> = <br> 0 </div>
+  <div class="sr" id="171"> ? <br> + </div>
+  <div class="sr" id="´192"> ` <br> ´ </div>
+  <div class="backspace" id="8"> ⟵ </div>
+</div>
+
+
+<div class="mid">
+    <div class="tab" id="9"> ⭾ </div>
+    <div class="sr" id="81"> Q </div>
+    <div class="sr" id="87"> W </div>
+    <div class="sr" id="69"> E </div>
+    <div class="sr" id="82"> R </div>
+    <div class="sr" id="84"> T </div>
+    <div class="sr" id="89"> Y </div>
+    <div class="sr" id="85"> U </div>
+    <div class="sr" id="73"> I </div>
+    <div class="sr" id="79"> O </div>
+    <div class="sr" id="80"> P </div>
+    <div class="sr" id="221"> Å </div>
+    <div class="sr" id="¨160"> ^ <br> ¨</div>
+
+
+  <div class="enter" id="13"> ↵ </div>
+  <div class="caps" id="20"> Caps Lock </div>
+  <div class="sr" id="65"> A </div>
+  <div class="sr" id="83"> S </div>
+  <div class="sr" id="68"> D </div>
+  <div class="sr" id="70"> F </div>
+  <div class="sr" id="71"> G </div>
+  <div class="sr" id="72"> H </div>
+  <div class="sr" id="74"> J </div>
+  <div class="sr" id="75"> K </div>
+  <div class="sr" id="76"> L </div>
+  <div class="sr" id="192"> Ö </div>
+  <div class="sr" id="222"> Ä </div>
+  <div class="sr" id=""> * <br> ' </div>
+</div>
+
+<div class="row">
+<div class="ls"> ⇧ </div>
+
+  <div class="sr2" id="60"> < <br> > </div>
+  <div class="sr2" id="90"> Z </div>
+  <div class="sr2" id="88"> X </div>
+  <div class="sr2" id="67"> C </div>
+  <div class="sr2" id="86"> V </div>
+  <div class="sr2" id="66"> B </div>
+  <div class="sr2" id="78"> N </div>
+  <div class="sr2" id="77"> M </div>
+  <div class="sr2" id="188"> ; <br> , </div>
+  <div class="sr2" id="190"> : <br> . </div>
+  <div class="sr2" id="173"> _ <br> - </div>
+<div class="rs" id="16"> ⇧ </div>
+</div>
+
+<div class="row">
+  <div class="ctrl" id="17"> Ctrl </div>
+  <div class="sr2" id=""> Fn </div>
+  <div class="sr2" id="224"> ❖ </div>
+  <div class="sr2" id="18"> Alt </div>
+  <div class="space" id="32"> </div>
+  <div class="sr2" id="18"> Alt Gr </div>
+  <div class="sr2" id="17"> Ctrl </div>
+</div>
+
+<div class="pointers">
+  <div class="top2" id="33"> Page<br>Up </div>
+  <div class="arrow1" id="38"> ⬆ </div>
+  <div class="top1" id="34"> Page<br>Down </div>
+  <div class="arrow2" id="37"> ⬅ Home </div>
+  <div class="arrow3" id="40"> ⬇ </div>
+  <div class="arrow4" id="39"> End ➡ </div>
+</div>
+
+
+
+</div>
+
+</div>
+
+
+  </body>
+</html>
